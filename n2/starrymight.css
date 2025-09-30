@@ -1,0 +1,38 @@
+
+.starry-night {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #2f2f2f;
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #fff;
+}
+
+.star:nth-child(1) { top: 10%; left: 20%; }
+.star:nth-child(2) { top: 30%; left: 50%; }
+.star:nth-child(3) { top: 50%; left: 10%; }
+.star:nth-child(4) { top: 70%; left: 80%; }
+.star:nth-child(5) { top: 20%; left: 90%; }
+
+.star {
+  animation: twinkle 2s infinite;
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
