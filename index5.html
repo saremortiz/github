@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <link rel="stylesheet" href="css/style5.css">
+    <script>
+        function toggleNav() {
+            dsp = document.getElementById("menu");
+            if (dsp.style.display == "none" || dsp.style.display == "") {
+                dsp.style.display = "block";
+            } else {
+                dsp.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <main>
+        <header>
+            <div id="button" onclick="toggleNav()">
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+            </div>
+            <h1>Responsive Design</h1>
+        </header>
+        <nav id="menu">
+            <h2>Nav</h2>
+            <ul>
+                <li><a href="#">Link #1</a></li>                   
+                <li><a href="#">Link #2</a></li>
+                <li><a href="#">Link #3</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h2>Article</h2>
+            <section>
+                <h2>Section</h2>
+            </section>
+        </article>
+        <aside>
+            <h2>Aside</h2>
+        </aside>
+        <footer>
+            <h2>Footer</h2>
+        </footer>
+    </main>
+</body>
+</html>
