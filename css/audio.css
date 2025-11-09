@@ -1,0 +1,100 @@
+:root{
+  --blue: #0d5bd3;
+  --pink: #f6c9d0;
+  --green: #dff0d8;
+  --page-pad: 18px;
+  --max-width: 920px;
+  --border-width: 6px;
+  --radius: 4px;
+  color: #222;
+}
+
+*{box-sizing:border-box}
+
+body{
+  background: #f7f7f7;
+  margin: 0;
+  padding: 24px;
+  display:flex;
+  justify-content:center;
+  font-size:16px;
+  line-height:1.35;
+}
+
+.page{
+  width:100%;
+  max-width: var(--max-width);
+  border: var(--border-width) solid var(--blue);
+  border-radius: 6px;
+  overflow: hidden;
+  background: white;
+}
+
+.page__header{
+  background: var(--blue);
+  color: white;
+  padding: 18px;
+  text-align:center;
+}
+
+.page__header h1{
+  margin: 0;
+  font-weight: 800;
+  font-size: 1.4rem;
+  letter-spacing: 0.4px;
+}
+
+.panel{
+  padding: 18px;
+  border-top: 6px solid var(--blue);
+}
+
+.panel__title{
+  margin: 0 0 12px 0;
+  text-align:center;
+  font-weight: 700;
+  color: #111;
+}
+
+/* audio panel background matches screenshot (pink) */
+.panel--audio{
+  background: var(--pink);
+}
+
+/* video panel background (light green) */
+.panel--video{
+  background: var(--green);
+}
+
+/* center the media and control width */
+.media-figure{
+  max-width: 840px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 8px 6px 12px;
+}
+
+.media-figure__media{
+  display: block;
+  width: 100%;
+  max-width: 820px;
+  margin: 0 auto 10px;
+  border-radius: 3px;
+  background: #000;
+}
+
+/* make audio player a bit smaller on wide screens to mimic the screenshot */
+@media (min-width:700px){
+  .media-figure_media[type="audio/mpeg"], audio.media-figure_media {
+    width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.media-figure__caption{
+  margin-top: 6px;
+  font-weight: 600;
+  color: #222;
+}
+

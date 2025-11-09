@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	  <meta charset="utf-8" />
+	  <meta name="viewport" content="width=device-width,initial-scale=1" />
+	  <title>Integrating Audio & Video</title>
+	  <link rel="stylesheet" href="audio.css" />
+	</head>
+	<body>
+	  <main class="page">
+		<header class="page__header">
+		  <h1>Integrating Audio &amp; Video</h1>
+		</header>
+
+		<section class="panel panel--audio" aria-labelledby="audio-title">
+		  <h2 id="audio-title" class="panel__title">Audio</h2>
+		  <figure class="media-figure">
+			<audio controls preload="metadata" class="media-figure__media" aria-label="John F. Kennedy inaugural speech audio">
+			  <source src="https://archive.org/download/JFK_Inaugural_Address_19610120/JFK_Inaugural_Address_19610120.mp3" type="audio/mpeg">
+			  Your browser does not support the audio element.
+			</audio>
+			<figcaption class="media-figure__caption">John F. Kennedy Inauguration Audio Speech</figcaption>
+		  </figure>
+		</section>
+
+		<section class="panel panel--video" aria-labelledby="video-title">
+		  <h2 id="video-title" class="panel__title">Video</h2>
+		  <figure class="media-figure">
+			<video controls preload="metadata" class="media-figure__media" width="720" aria-label="Big Buck Bunny animation excerpt">
+			  <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+			  Your browser does not support the video tag.
+			</video>
+			<figcaption class="media-figure__caption">Big Buck Bunny — animation excerpt</figcaption>
+		  </figure>
+		</section>
+
+		<footer class="page__footer">
+		  
+		</footer>
+	  </main>
+	</body>
+</html>
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Integrating Audio & Video</title>
+  <link rel="stylesheet" href="css/video.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <script src="js/audio.js"></script>
+  
+</head>
+<body>
+ 
+  <header class="site-header">
+    <h1 class="logo">Integrating Audio &amp; Video</h1>
+
+    <!-- how to make a Hamburger -->
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+
+    <!-- Dropdown  -->
+    <nav class="nav-links" id="navLinks">
+      <a href="#">Home</a>
+      <a href="#">Audio</a>
+      <a href="#">Video</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+ 
+    <section class="panel panel--audio">
+      <h2>Audio</h2>
+      <figure class="media-figure audio-figure">
+        <!-- Poster image with audio overlay -->
+        <img src="images/JFKWHP-AR6296-B.jpg" 
+             alt="John F. Kennedy giving inaugural address" class="poster">
+        <audio controls class="audio-controls" aria-label="JFK Inaugural Address">
+          <source src="https://archive.org/download/JFK_Inaugural_Address_19610120/JFK_Inaugural_Address_19610120.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <figcaption>John F. Kennedy Inauguration Audio Speech</figcaption>
+      </figure>
+    </section>
+
+ 
+    <section class="panel panel--video">
+      <h2>Video</h2>
+      <figure class="media-figure">
+        <video controls preload="metadata" width="720" aria-label="Big Buck Bunny animation excerpt">
+          <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>Big Buck Bunny — animation excerpt</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  
+</body>
+</html>
